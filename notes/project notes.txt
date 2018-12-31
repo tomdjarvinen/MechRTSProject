@@ -1,0 +1,46 @@
+Actions:
+	Fire X Weapon at Y Enemy
+	Fire X Weapon at Y Location????
+	Move to X Location
+	Move towards X object
+	Issue Message: A message is an integer + coordinate tuple?	Non-blocking
+	Interact with object
+		Bunkers
+		Dropable buffs?
+		The flag
+	Switch AI/Objective module
+Abstract Actions:
+	Locate Objects of interest
+Basic functions: flag runner, scout, search and destroy, static defender, "linebacker"
+Unit of distance: size of one mech? Integer coordinate, actual locations will be represented as floats.
+
+Grid:
+Conditions:
+
+Search terms: Distance, type, role, state (status effect, flag bearer, deployed?, movement speed)	
+
+Scout:
+	Search unkown locations for flag/enemy mechs
+	Avoid taking excess fire by being out of range of enemy
+	Item loadout: High LoS, High Movement speed, Low damage, Low HP?
+	Smoothly transition to another role when important information has been gathered
+		Define: State of known information 
+			Solution: Flag.location does exist
+		Know/estimate: weapon range of enemy
+		Retreat logic
+
+
+Purpose of item system: Enable unique behaviors based on item loadout
+	Hit/run
+	Sniper
+	etc. 
+
+	What is a gun:
+		Range
+		Damage
+		Damage type
+		Fire rate/reload time
+		Fire while moving?
+		Weight
+		Projectile speed
+		

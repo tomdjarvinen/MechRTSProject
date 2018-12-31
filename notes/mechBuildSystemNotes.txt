@@ -1,0 +1,58 @@
+Mech Loadout System:
+	Resources: Power, Weight
+	Weight effects (1) Movement Speed, (2) Vulnerability to knockbacks
+	Power Effects: (1) Movement Speed, (2) Weapon Budget
+
+Weapons are balanced along:
+	Damage
+	Fire Rate
+	Power Requirement
+	Range
+	Projectile Speed
+	AoE radius
+	Force
+	Weight
+	Damage Type
+Armor is balanced on
+	Weight
+	Damage Reduction
+	Type of Damage Resistances
+Frame is balanced on
+	Max HP
+	Power
+	Weight
+	
+
+
+StackTrace:
+	
+
+	Terrain/Interactables
+	Random Item Generator System
+		Loot generator
+		In game currency system
+	RTS-style intermediate mech fighting space thing
+	Config File system
+		Item Verification: Server-side hashing
+	ItemSocketAttachment Sytsem
+		Attachment is Transform object which is a subobject of your top-level game object
+	Information Sharing
+		How to implement hidden information
+		Service Locator: 
+			Register Service
+			Get Service
+	AI API
+		Information Abstractor API
+	Deterministic Raycast weapon system
+	Establish baseline values for:
+		Mass/Power/Damage/Health/Fire rate etc.
+	AssetLocator
+Ideas surrounding RTS Style Scripting Game:
+	Scripts are deployable, manual control is MoBa Style, you can deploy a script on active units via a convenient in-game menu which shows your available scripts.  These may take inputs e.g. locations or areas. 
+		Script inputs: locations, zones, game objects, 'options'
+	Map must have many points of contention between which you divide your resources
+		E.g. 'Deployment zones'
+	Probably there are 'creeps' which you can deploy and control and script
+		Ways to contemplate stuff at the individual level and group level.
+	We probably want to borrow liberally from various RTS and MoBa mechanics.
+	Scripting budget: # of scripts running at the same time, script complexity metric.
